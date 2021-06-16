@@ -1,0 +1,224 @@
+<robot name="test">
+<link name="head"><collision><geometry><box size="0.16 0.02 0.14"/></geometry></collision></link>
+<link name="head_z_l"/>
+<joint name="head_z_l" type="fixed"><origin xyz="0 0 -0.07500000000000001"/><parent link="head"/><child link="head_z_l"/></joint>
+<link name="head_z_h"/>
+<joint name="head_z_h" type="fixed"><origin xyz="0 0 -0.07500000000000001"/><parent link="head_z_h"/><child link="head"/></joint>
+<link name="upper_neck"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="upper_neck_z_l"/>
+<joint name="upper_neck_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="upper_neck"/><child link="upper_neck_z_l"/></joint>
+<link name="upper_neck_z_h"/>
+<joint name="upper_neck_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="upper_neck_z_h"/><child link="upper_neck"/></joint>
+<link name="lower_neck"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="lower_neck_z_l"/>
+<joint name="lower_neck_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="lower_neck"/><child link="lower_neck_z_l"/></joint>
+<link name="lower_neck_z_h"/>
+<joint name="lower_neck_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="lower_neck_z_h"/><child link="lower_neck"/></joint>
+<link name="cross"><collision><geometry><box size="0.3 0.02 0.02"/></geometry></collision></link>
+<link name="cross_x_l"/>
+<joint name="cross_x_l" type="fixed"><origin xyz="-0.155 0 0"/><parent link="cross"/><child link="cross_x_l"/></joint>
+<link name="cross_x_h"/>
+<joint name="cross_x_h" type="fixed"><origin xyz="0.155 0 0"/><parent link="cross"/><child link="cross_x_h"/></joint>
+<link name="cross_z_l"/>
+<joint name="cross_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="cross"/><child link="cross_z_l"/></joint>
+<link name="cross_z_h"/>
+<joint name="cross_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="cross_z_h"/><child link="cross"/></joint>
+<link name="ls1"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="ls1_x_h"/>
+<joint name="ls1_x_h" type="fixed"><origin xyz="-0.015 0 0"/><parent link="ls1_x_h"/><child link="ls1"/></joint>
+<link name="ls1_z_l"/>
+<joint name="ls1_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="ls1"/><child link="ls1_z_l"/></joint>
+<link name="left_sb"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="left_sb_z_l"/>
+<joint name="left_sb_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_sb"/><child link="left_sb_z_l"/></joint>
+<link name="left_sb_z_h"/>
+<joint name="left_sb_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_sb_z_h"/><child link="left_sb"/></joint>
+<link name="left_upper_arm"><collision><geometry><box size="0.02 0.02 0.26"/></geometry></collision></link>
+<link name="left_upper_arm_z_l"/>
+<joint name="left_upper_arm_z_l" type="fixed"><origin xyz="0 0 -0.135"/><parent link="left_upper_arm"/><child link="left_upper_arm_z_l"/></joint>
+<link name="left_upper_arm_z_h"/>
+<joint name="left_upper_arm_z_h" type="fixed"><origin xyz="0 0 -0.135"/><parent link="left_upper_arm_z_h"/><child link="left_upper_arm"/></joint>
+<link name="left_lower_arm"><collision><geometry><box size="0.02 0.02 0.24"/></geometry></collision></link>
+<link name="left_lower_arm_z_l"/>
+<joint name="left_lower_arm_z_l" type="fixed"><origin xyz="0 0 -0.125"/><parent link="left_lower_arm"/><child link="left_lower_arm_z_l"/></joint>
+<link name="left_lower_arm_z_h"/>
+<joint name="left_lower_arm_z_h" type="fixed"><origin xyz="0 0 -0.125"/><parent link="left_lower_arm_z_h"/><child link="left_lower_arm"/></joint>
+<link name="left_w1"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="left_w1_z_l"/>
+<joint name="left_w1_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_w1"/><child link="left_w1_z_l"/></joint>
+<link name="left_w1_z_h"/>
+<joint name="left_w1_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_w1_z_h"/><child link="left_w1"/></joint>
+<link name="left_w2"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="left_w2_z_l"/>
+<joint name="left_w2_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_w2"/><child link="left_w2_z_l"/></joint>
+<link name="left_w2_z_h"/>
+<joint name="left_w2_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_w2_z_h"/><child link="left_w2"/></joint>
+<link name="left_hand"><collision><geometry><box size="0.08 0.02 0.06"/></geometry></collision></link>
+<link name="left_hand_x_l"/>
+<joint name="left_hand_x_l" type="fixed"><origin xyz="-0.045 0 0"/><parent link="left_hand"/><child link="left_hand_x_l"/></joint>
+<link name="left_hand_z_h"/>
+<joint name="left_hand_z_h" type="fixed"><origin xyz="0 0 -0.034999999999999996"/><parent link="left_hand_z_h"/><child link="left_hand"/></joint>
+<link name="rs1"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="rs1_x_l"/>
+<joint name="rs1_x_l" type="fixed"><origin xyz="0.015 0 0"/><parent link="rs1_x_l"/><child link="rs1"/></joint>
+<link name="rs1_z_l"/>
+<joint name="rs1_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="rs1"/><child link="rs1_z_l"/></joint>
+<link name="right_sb"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="right_sb_z_l"/>
+<joint name="right_sb_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_sb"/><child link="right_sb_z_l"/></joint>
+<link name="right_sb_z_h"/>
+<joint name="right_sb_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_sb_z_h"/><child link="right_sb"/></joint>
+<link name="right_upper_arm"><collision><geometry><box size="0.02 0.02 0.26"/></geometry></collision></link>
+<link name="right_upper_arm_z_l"/>
+<joint name="right_upper_arm_z_l" type="fixed"><origin xyz="0 0 -0.135"/><parent link="right_upper_arm"/><child link="right_upper_arm_z_l"/></joint>
+<link name="right_upper_arm_z_h"/>
+<joint name="right_upper_arm_z_h" type="fixed"><origin xyz="0 0 -0.135"/><parent link="right_upper_arm_z_h"/><child link="right_upper_arm"/></joint>
+<link name="right_lower_arm"><collision><geometry><box size="0.02 0.02 0.24"/></geometry></collision></link>
+<link name="right_lower_arm_z_l"/>
+<joint name="right_lower_arm_z_l" type="fixed"><origin xyz="0 0 -0.125"/><parent link="right_lower_arm"/><child link="right_lower_arm_z_l"/></joint>
+<link name="right_lower_arm_z_h"/>
+<joint name="right_lower_arm_z_h" type="fixed"><origin xyz="0 0 -0.125"/><parent link="right_lower_arm_z_h"/><child link="right_lower_arm"/></joint>
+<link name="right_w1"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="right_w1_z_l"/>
+<joint name="right_w1_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_w1"/><child link="right_w1_z_l"/></joint>
+<link name="right_w1_z_h"/>
+<joint name="right_w1_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_w1_z_h"/><child link="right_w1"/></joint>
+<link name="right_w2"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="right_w2_z_l"/>
+<joint name="right_w2_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_w2"/><child link="right_w2_z_l"/></joint>
+<link name="right_w2_z_h"/>
+<joint name="right_w2_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_w2_z_h"/><child link="right_w2"/></joint>
+<link name="right_hand"><collision><geometry><box size="0.08 0.02 0.06"/></geometry></collision></link>
+<link name="right_hand_x_h"/>
+<joint name="right_hand_x_h" type="fixed"><origin xyz="0.045 0 0"/><parent link="right_hand"/><child link="right_hand_x_h"/></joint>
+<link name="right_hand_z_h"/>
+<joint name="right_hand_z_h" type="fixed"><origin xyz="0 0 -0.034999999999999996"/><parent link="right_hand_z_h"/><child link="right_hand"/></joint>
+<link name="upper_back"><collision><geometry><box size="0.02 0.02 0.16"/></geometry></collision></link>
+<link name="upper_back_z_l"/>
+<joint name="upper_back_z_l" type="fixed"><origin xyz="0 0 -0.085"/><parent link="upper_back"/><child link="upper_back_z_l"/></joint>
+<link name="upper_back_z_h"/>
+<joint name="upper_back_z_h" type="fixed"><origin xyz="0 0 -0.085"/><parent link="upper_back_z_h"/><child link="upper_back"/></joint>
+<link name="center_back"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="center_back_z_l"/>
+<joint name="center_back_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="center_back"/><child link="center_back_z_l"/></joint>
+<link name="center_back_z_h"/>
+<joint name="center_back_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="center_back_z_h"/><child link="center_back"/></joint>
+<link name="lower_back"><collision><geometry><box size="0.02 0.02 0.2"/></geometry></collision></link>
+<link name="lower_back_z_l"/>
+<joint name="lower_back_z_l" type="fixed"><origin xyz="0 0 -0.10500000000000001"/><parent link="lower_back"/><child link="lower_back_z_l"/></joint>
+<link name="lower_back_z_h"/>
+<joint name="lower_back_z_h" type="fixed"><origin xyz="0 0 -0.10500000000000001"/><parent link="lower_back_z_h"/><child link="lower_back"/></joint>
+<link name="hip"><collision><geometry><box size="0.16 0.02 0.02"/></geometry></collision></link>
+<link name="hip_x_l"/>
+<joint name="hip_x_l" type="fixed"><origin xyz="-0.085 0 0"/><parent link="hip"/><child link="hip_x_l"/></joint>
+<link name="hip_x_h"/>
+<joint name="hip_x_h" type="fixed"><origin xyz="0.085 0 0"/><parent link="hip"/><child link="hip_x_h"/></joint>
+<link name="hip_z_h"/>
+<joint name="hip_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="hip_z_h"/><child link="hip"/></joint>
+<link name="lh1"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="lh1_x_h"/>
+<joint name="lh1_x_h" type="fixed"><origin xyz="-0.015 0 0"/><parent link="lh1_x_h"/><child link="lh1"/></joint>
+<link name="lh1_z_l"/>
+<joint name="lh1_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="lh1"/><child link="lh1_z_l"/></joint>
+<link name="left_hb"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="left_hb_z_l"/>
+<joint name="left_hb_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_hb"/><child link="left_hb_z_l"/></joint>
+<link name="left_hb_z_h"/>
+<joint name="left_hb_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_hb_z_h"/><child link="left_hb"/></joint>
+<link name="left_upper_leg"><collision><geometry><box size="0.02 0.02 0.4"/></geometry></collision></link>
+<link name="left_upper_leg_z_l"/>
+<joint name="left_upper_leg_z_l" type="fixed"><origin xyz="0 0 -0.20500000000000002"/><parent link="left_upper_leg"/><child link="left_upper_leg_z_l"/></joint>
+<link name="left_upper_leg_z_h"/>
+<joint name="left_upper_leg_z_h" type="fixed"><origin xyz="0 0 -0.20500000000000002"/><parent link="left_upper_leg_z_h"/><child link="left_upper_leg"/></joint>
+<link name="left_lower_leg"><collision><geometry><box size="0.02 0.02 0.3"/></geometry></collision></link>
+<link name="left_lower_leg_z_l"/>
+<joint name="left_lower_leg_z_l" type="fixed"><origin xyz="0 0 -0.155"/><parent link="left_lower_leg"/><child link="left_lower_leg_z_l"/></joint>
+<link name="left_lower_leg_z_h"/>
+<joint name="left_lower_leg_z_h" type="fixed"><origin xyz="0 0 -0.155"/><parent link="left_lower_leg_z_h"/><child link="left_lower_leg"/></joint>
+<link name="left_aa"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="left_aa_z_l"/>
+<joint name="left_aa_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_aa"/><child link="left_aa_z_l"/></joint>
+<link name="left_aa_z_h"/>
+<joint name="left_aa_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_aa_z_h"/><child link="left_aa"/></joint>
+<link name="left_ab"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="left_ab_z_l"/>
+<joint name="left_ab_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_ab"/><child link="left_ab_z_l"/></joint>
+<link name="left_ab_z_h"/>
+<joint name="left_ab_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="left_ab_z_h"/><child link="left_ab"/></joint>
+<link name="left_foot"><collision><geometry><box size="0.07 0.2 0.02"/></geometry></collision></link>
+<link name="left_foot_x_l"/>
+<joint name="left_foot_x_l" type="fixed"><origin xyz="-0.04 0 0"/><parent link="left_foot"/><child link="left_foot_x_l"/></joint>
+<link name="left_foot_z_h"/>
+<joint name="left_foot_z_h" type="fixed"><origin xyz="0 0.05 -0.015"/><parent link="left_foot_z_h"/><child link="left_foot"/></joint>
+<link name="rh1"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="rh1_x_l"/>
+<joint name="rh1_x_l" type="fixed"><origin xyz="0.015 0 0"/><parent link="rh1_x_l"/><child link="rh1"/></joint>
+<link name="rh1_z_l"/>
+<joint name="rh1_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="rh1"/><child link="rh1_z_l"/></joint>
+<link name="right_hb"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="right_hb_z_l"/>
+<joint name="right_hb_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_hb"/><child link="right_hb_z_l"/></joint>
+<link name="right_hb_z_h"/>
+<joint name="right_hb_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_hb_z_h"/><child link="right_hb"/></joint>
+<link name="right_upper_leg"><collision><geometry><box size="0.02 0.02 0.4"/></geometry></collision></link>
+<link name="right_upper_leg_z_l"/>
+<joint name="right_upper_leg_z_l" type="fixed"><origin xyz="0 0 -0.20500000000000002"/><parent link="right_upper_leg"/><child link="right_upper_leg_z_l"/></joint>
+<link name="right_upper_leg_z_h"/>
+<joint name="right_upper_leg_z_h" type="fixed"><origin xyz="0 0 -0.20500000000000002"/><parent link="right_upper_leg_z_h"/><child link="right_upper_leg"/></joint>
+<link name="right_lower_leg"><collision><geometry><box size="0.02 0.02 0.3"/></geometry></collision></link>
+<link name="right_lower_leg_z_l"/>
+<joint name="right_lower_leg_z_l" type="fixed"><origin xyz="0 0 -0.155"/><parent link="right_lower_leg"/><child link="right_lower_leg_z_l"/></joint>
+<link name="right_lower_leg_z_h"/>
+<joint name="right_lower_leg_z_h" type="fixed"><origin xyz="0 0 -0.155"/><parent link="right_lower_leg_z_h"/><child link="right_lower_leg"/></joint>
+<link name="right_aa"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="right_aa_z_l"/>
+<joint name="right_aa_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_aa"/><child link="right_aa_z_l"/></joint>
+<link name="right_aa_z_h"/>
+<joint name="right_aa_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_aa_z_h"/><child link="right_aa"/></joint>
+<link name="right_ab"><collision><geometry><box size="0.02 0.02 0.02"/></geometry></collision></link>
+<link name="right_ab_z_l"/>
+<joint name="right_ab_z_l" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_ab"/><child link="right_ab_z_l"/></joint>
+<link name="right_ab_z_h"/>
+<joint name="right_ab_z_h" type="fixed"><origin xyz="0 0 -0.015"/><parent link="right_ab_z_h"/><child link="right_ab"/></joint>
+<link name="right_foot"><collision><geometry><box size="0.07 0.2 0.02"/></geometry></collision></link>
+<link name="right_foot_x_h"/>
+<joint name="right_foot_x_h" type="fixed"><origin xyz="0.04 0 0"/><parent link="right_foot"/><child link="right_foot_x_h"/></joint>
+<link name="right_foot_z_h"/>
+<joint name="right_foot_z_h" type="fixed"><origin xyz="0 0.05 -0.015"/><parent link="right_foot_z_h"/><child link="right_foot"/></joint>
+<joint name="neck_c" type="revolute"><axis xyz="0 0 1"/><parent link="head_z_l"/><child link="upper_neck_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="neck_b" type="revolute"><axis xyz="0 1 0"/><parent link="upper_neck_z_l"/><child link="lower_neck_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="neck_a" type="revolute"><axis xyz="1 0 0"/><parent link="lower_neck_z_l"/><child link="cross_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="ls_a" type="revolute"><axis xyz="0 0 1"/><parent link="cross_x_l"/><child link="ls1_x_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_s_b" type="revolute"><axis xyz="0 1 0"/><parent link="ls1_z_l"/><child link="left_sb_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_s_c" type="revolute"><axis xyz="1 0 0"/><parent link="left_sb_z_l"/><child link="left_upper_arm_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_ellbow" type="revolute"><axis xyz="1 0 0"/><parent link="left_upper_arm_z_l"/><child link="left_lower_arm_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_wra" type="revolute"><axis xyz="1 0 0"/><parent link="left_lower_arm_z_l"/><child link="left_w1_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_wrb" type="revolute"><axis xyz="0 1 0"/><parent link="left_w1_z_l"/><child link="left_w2_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_wrc" type="revolute"><axis xyz="0 0 1"/><parent link="left_w2_z_l"/><child link="left_hand_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="rs_a" type="revolute"><axis xyz="0 0 1"/><parent link="cross_x_h"/><child link="rs1_x_l"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_s_b" type="revolute"><axis xyz="0 1 0"/><parent link="rs1_z_l"/><child link="right_sb_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_s_c" type="revolute"><axis xyz="1 0 0"/><parent link="right_sb_z_l"/><child link="right_upper_arm_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_ellbow" type="revolute"><axis xyz="1 0 0"/><parent link="right_upper_arm_z_l"/><child link="right_lower_arm_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_wra" type="revolute"><axis xyz="1 0 0"/><parent link="right_lower_arm_z_l"/><child link="right_w1_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_wrb" type="revolute"><axis xyz="0 1 0"/><parent link="right_w1_z_l"/><child link="right_w2_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_wrc" type="revolute"><axis xyz="0 0 1"/><parent link="right_w2_z_l"/><child link="right_hand_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="u_back" type="revolute"><axis xyz="1 0 0"/><parent link="cross_z_l"/><child link="upper_back_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="cu_back" type="revolute"><axis xyz="0 1 0"/><parent link="upper_back_z_l"/><child link="center_back_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="cl_back" type="revolute"><axis xyz="1 0 0"/><parent link="center_back_z_l"/><child link="lower_back_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="l_back" type="revolute"><axis xyz="0 0 1"/><parent link="lower_back_z_l"/><child link="hip_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="lh_a" type="revolute"><axis xyz="0 0 1"/><parent link="hip_x_l"/><child link="lh1_x_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_h_b" type="revolute"><axis xyz="0 1 0"/><parent link="lh1_z_l"/><child link="left_hb_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_h_c" type="revolute"><axis xyz="1 0 0"/><parent link="left_hb_z_l"/><child link="left_upper_leg_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_knee" type="revolute"><axis xyz="1 0 0"/><parent link="left_upper_leg_z_l"/><child link="left_lower_leg_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_aa" type="revolute"><axis xyz="1 0 0"/><parent link="left_lower_leg_z_l"/><child link="left_aa_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_ab" type="revolute"><axis xyz="0 1 0"/><parent link="left_aa_z_l"/><child link="left_ab_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="left_foot" type="fixed"><axis xyz="1 0 0"/><parent link="left_ab_z_l"/><child link="left_foot_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="rh_a" type="revolute"><axis xyz="0 0 1"/><parent link="hip_x_h"/><child link="rh1_x_l"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_h_b" type="revolute"><axis xyz="0 1 0"/><parent link="rh1_z_l"/><child link="right_hb_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_h_c" type="revolute"><axis xyz="1 0 0"/><parent link="right_hb_z_l"/><child link="right_upper_leg_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_knee" type="revolute"><axis xyz="1 0 0"/><parent link="right_upper_leg_z_l"/><child link="right_lower_leg_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_aa" type="revolute"><axis xyz="1 0 0"/><parent link="right_lower_leg_z_l"/><child link="right_aa_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_ab" type="revolute"><axis xyz="0 1 0"/><parent link="right_aa_z_l"/><child link="right_ab_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+<joint name="right_foot" type="fixed"><axis xyz="1 0 0"/><parent link="right_ab_z_l"/><child link="right_foot_z_h"/><limit effort="1000.0" velocity="5"/>"</joint>
+</robot>
+
